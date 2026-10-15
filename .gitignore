@@ -1,0 +1,6 @@
+node_modules/
+extracted_employees/
+.env
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
