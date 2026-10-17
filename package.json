@@ -1,7 +1,7 @@
 {
-  "name": "kimpl-erp-server",
+  "name": "kartik-india-manpower-erp-server",
   "version": "1.0.0",
-  "description": "Backend API for KIMPL Manpower ERP & HRMS",
+  "description": "Backend API for Kartik India Manpower ERP & HRMS",
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",

@@ -3,7 +3,7 @@
     {
       "id": "u1",
       "name": "Alok Kumar",
-      "email": "md@kimpl.com",
+      "email": "md@kartikindiamanpower.com",
       "password": "123",
       "role": "OWNER",
       "department": "Management",
@@ -18,7 +18,7 @@
     {
       "id": "u2",
       "name": "Rahul Kumar",
-      "email": "gm@kimpl.com",
+      "email": "gm@kartikindiamanpower.com",
       "password": "123",
       "role": "MANAGER",
       "department": "Operations",
@@ -38,7 +38,7 @@
     {
       "id": "u3",
       "name": "Pooja Sharma",
-      "email": "hr@kimpl.com",
+      "email": "hr@kartikindiamanpower.com",
       "password": "123",
       "role": "DEPT_MANAGER",
       "department": "HR",
@@ -56,7 +56,7 @@
     {
       "id": "u4",
       "name": "Arpita Sinha",
-      "email": "accounts@kimpl.com",
+      "email": "accounts@kartikindiamanpower.com",
       "password": "123",
       "role": "DEPT_MANAGER",
       "department": "Accounts",
@@ -75,7 +75,7 @@
     {
       "id": "u5",
       "name": "Vikas Verma",
-      "email": "tender@kimpl.com",
+      "email": "tender@kartikindiamanpower.com",
       "password": "123",
       "role": "DEPT_MANAGER",
       "department": "Tender",
@@ -93,7 +93,7 @@
     {
       "id": "u6",
       "name": "Manoj Tiwary",
-      "email": "compliance@kimpl.com",
+      "email": "compliance@kartikindiamanpower.com",
       "password": "123",
       "role": "DEPT_MANAGER",
       "department": "Compliance",
@@ -111,7 +111,7 @@
     {
       "id": "u7",
       "name": "Sanjay Mishra",
-      "email": "deo@kimpl.com",
+      "email": "deo@kartikindiamanpower.com",
       "password": "123",
       "role": "EMPLOYEE",
       "department": "Operations",
@@ -127,7 +127,7 @@
     {
       "id": "u8",
       "name": "Ramesh Singh",
-      "email": "supervisor@kimpl.com",
+      "email": "supervisor@kartikindiamanpower.com",
       "password": "123",
       "role": "EMPLOYEE",
       "department": "HR",
@@ -144,7 +144,7 @@
     {
       "id": "u9",
       "name": "Ankit Roy",
-      "email": "ankit.roy@kimpl.com",
+      "email": "ankit.roy@kartikindiamanpower.com",
       "password": "123",
       "role": "EMPLOYEE",
       "department": "Accounts",
@@ -375,7 +375,7 @@
       "name": "Arpita Sinha",
       "type": "Office Staff",
       "tenderId": null,
-      "tenderName": "Head Office (KIMPL Patna)",
+      "tenderName": "Head Office (Kartik India Manpower Patna)",
       "post": "Accountant",
       "mobile": "9934123890",
       "aadhaar": "4207-9900-1122",
@@ -391,7 +391,7 @@
       "name": "Taniya Gupta",
       "type": "Office Staff",
       "tenderId": null,
-      "tenderName": "Head Office (KIMPL Patna)",
+      "tenderName": "Head Office (Kartik India Manpower Patna)",
       "post": "DEO",
       "mobile": "9835001122",
       "aadhaar": "4207-3344-5566",
@@ -406,7 +406,7 @@
   "invoices": [
     {
       "id": "inv1",
-      "invoiceNo": "KIMPL/2026-27/001",
+      "invoiceNo": "SVPL/2026-27/001",
       "tenderId": "t1",
       "tenderName": "DIET Sheohar Project Tender",
       "client": "DIET Sheohar College",
@@ -424,7 +424,7 @@
     },
     {
       "id": "inv2",
-      "invoiceNo": "KIMPL/2026-27/002",
+      "invoiceNo": "SVPL/2026-27/002",
       "tenderId": "t1",
       "tenderName": "DIET Sheohar Project Tender",
       "client": "DIET Sheohar College",
@@ -442,7 +442,7 @@
     },
     {
       "id": "inv3",
-      "invoiceNo": "KIMPL/2026-27/003",
+      "invoiceNo": "SVPL/2026-27/003",
       "tenderId": "t4",
       "tenderName": "DIET Quila Ghat Darbhanga",
       "client": "DIET Quila Ghat, Darbhanga",
@@ -460,7 +460,7 @@
     },
     {
       "id": "inv4",
-      "invoiceNo": "KIMPL/2026-27/004",
+      "invoiceNo": "SVPL/2026-27/004",
       "tenderId": "t3",
       "tenderName": "Bakhtiyarpur Block Sanitation",
       "client": "Block Development Office, Bakhtiyarpur",
@@ -481,7 +481,7 @@
     {
       "id": "l1",
       "client": "DIET Sheohar College",
-      "billNo": "KIMPL/2026-27/001",
+      "billNo": "SVPL/2026-27/001",
       "month": "August 2026",
       "billedAmount": 75504.48,
       "receivedAmount": 75504.48,
@@ -492,7 +492,7 @@
     {
       "id": "l2",
       "client": "DIET Sheohar College",
-      "billNo": "KIMPL/2026-27/002",
+      "billNo": "SVPL/2026-27/002",
       "month": "September 2026",
       "billedAmount": 75504.48,
       "receivedAmount": 0,
@@ -503,7 +503,7 @@
     {
       "id": "l3",
       "client": "DIET Quila Ghat Darbhanga",
-      "billNo": "KIMPL/2026-27/003",
+      "billNo": "SVPL/2026-27/003",
       "month": "September 2026",
       "billedAmount": 219428,
       "receivedAmount": 0,
@@ -514,7 +514,7 @@
     {
       "id": "l4",
       "client": "Bakhtiyarpur Block Sanitation",
-      "billNo": "KIMPL/2026-27/004",
+      "billNo": "SVPL/2026-27/004",
       "month": "September 2026",
       "billedAmount": 142200,
       "receivedAmount": 80000,
@@ -1313,7 +1313,7 @@
       "outTime": "05:05 PM",
       "workingHours": 8.2,
       "status": "PRESENT",
-      "site": "Head Office (KIMPL Patna)",
+      "site": "Head Office (Kartik India Manpower Patna)",
       "source": "Biometric eSSL-Pro (DIET Gate 1)"
     },
     {
@@ -1325,7 +1325,7 @@
       "outTime": "05:05 PM",
       "workingHours": 8.2,
       "status": "PRESENT",
-      "site": "Head Office (KIMPL Patna)",
+      "site": "Head Office (Kartik India Manpower Patna)",
       "source": "Biometric eSSL-Pro (DIET Gate 1)"
     },
     {
@@ -1337,7 +1337,7 @@
       "outTime": "05:05 PM",
       "workingHours": 8.2,
       "status": "PRESENT",
-      "site": "Head Office (KIMPL Patna)",
+      "site": "Head Office (Kartik India Manpower Patna)",
       "source": "Biometric eSSL-Pro (DIET Gate 1)"
     },
     {
@@ -1349,7 +1349,7 @@
       "outTime": "05:05 PM",
       "workingHours": 8.2,
       "status": "PRESENT",
-      "site": "Head Office (KIMPL Patna)",
+      "site": "Head Office (Kartik India Manpower Patna)",
       "source": "Biometric eSSL-Pro (DIET Gate 1)"
     },
     {
@@ -1361,7 +1361,7 @@
       "outTime": "--",
       "workingHours": 0,
       "status": "OFF_DAY",
-      "site": "Head Office (KIMPL Patna)",
+      "site": "Head Office (Kartik India Manpower Patna)",
       "source": "Biometric eSSL-Pro (DIET Gate 1)"
     },
     {
@@ -1373,7 +1373,7 @@
       "outTime": "05:05 PM",
       "workingHours": 8.2,
       "status": "PRESENT",
-      "site": "Head Office (KIMPL Patna)",
+      "site": "Head Office (Kartik India Manpower Patna)",
       "source": "Biometric eSSL-Pro (DIET Gate 1)"
     },
     {
@@ -1385,7 +1385,7 @@
       "outTime": "05:05 PM",
       "workingHours": 8.2,
       "status": "PRESENT",
-      "site": "Head Office (KIMPL Patna)",
+      "site": "Head Office (Kartik India Manpower Patna)",
       "source": "Biometric eSSL-Pro (DIET Gate 1)"
     },
     {
@@ -1397,7 +1397,7 @@
       "outTime": "05:05 PM",
       "workingHours": 8.2,
       "status": "PRESENT",
-      "site": "Head Office (KIMPL Patna)",
+      "site": "Head Office (Kartik India Manpower Patna)",
       "source": "Biometric eSSL-Pro (DIET Gate 1)"
     },
     {
@@ -1409,7 +1409,7 @@
       "outTime": "05:05 PM",
       "workingHours": 8.2,
       "status": "PRESENT",
-      "site": "Head Office (KIMPL Patna)",
+      "site": "Head Office (Kartik India Manpower Patna)",
       "source": "Biometric eSSL-Pro (DIET Gate 1)"
     },
     {
@@ -1421,7 +1421,7 @@
       "outTime": "05:05 PM",
       "workingHours": 8.2,
       "status": "PRESENT",
-      "site": "Head Office (KIMPL Patna)",
+      "site": "Head Office (Kartik India Manpower Patna)",
       "source": "Biometric eSSL-Pro (DIET Gate 1)"
     },
     {
@@ -1433,7 +1433,7 @@
       "outTime": "05:05 PM",
       "workingHours": 8.2,
       "status": "PRESENT",
-      "site": "Head Office (KIMPL Patna)",
+      "site": "Head Office (Kartik India Manpower Patna)",
       "source": "Biometric eSSL-Pro (DIET Gate 1)"
     },
     {
@@ -1445,7 +1445,7 @@
       "outTime": "--",
       "workingHours": 0,
       "status": "OFF_DAY",
-      "site": "Head Office (KIMPL Patna)",
+      "site": "Head Office (Kartik India Manpower Patna)",
       "source": "Biometric eSSL-Pro (DIET Gate 1)"
     },
     {
@@ -1457,7 +1457,7 @@
       "outTime": "05:05 PM",
       "workingHours": 8.2,
       "status": "PRESENT",
-      "site": "Head Office (KIMPL Patna)",
+      "site": "Head Office (Kartik India Manpower Patna)",
       "source": "Biometric eSSL-Pro (DIET Gate 1)"
     },
     {
@@ -1469,7 +1469,7 @@
       "outTime": "05:05 PM",
       "workingHours": 8.2,
       "status": "PRESENT",
-      "site": "Head Office (KIMPL Patna)",
+      "site": "Head Office (Kartik India Manpower Patna)",
       "source": "Biometric eSSL-Pro (DIET Gate 1)"
     },
     {
@@ -1481,7 +1481,7 @@
       "outTime": "05:05 PM",
       "workingHours": 8.2,
       "status": "PRESENT",
-      "site": "Head Office (KIMPL Patna)",
+      "site": "Head Office (Kartik India Manpower Patna)",
       "source": "Biometric eSSL-Pro (DIET Gate 1)"
     },
     {
@@ -1493,7 +1493,7 @@
       "outTime": "05:05 PM",
       "workingHours": 8.2,
       "status": "PRESENT",
-      "site": "Head Office (KIMPL Patna)",
+      "site": "Head Office (Kartik India Manpower Patna)",
       "source": "Biometric eSSL-Pro (DIET Gate 1)"
     },
     {
@@ -1505,7 +1505,7 @@
       "outTime": "05:05 PM",
       "workingHours": 8.2,
       "status": "PRESENT",
-      "site": "Head Office (KIMPL Patna)",
+      "site": "Head Office (Kartik India Manpower Patna)",
       "source": "Biometric eSSL-Pro (DIET Gate 1)"
     },
     {
@@ -1517,7 +1517,7 @@
       "outTime": "--",
       "workingHours": 0,
       "status": "OFF_DAY",
-      "site": "Head Office (KIMPL Patna)",
+      "site": "Head Office (Kartik India Manpower Patna)",
       "source": "Biometric eSSL-Pro (DIET Gate 1)"
     },
     {
@@ -1529,7 +1529,7 @@
       "outTime": "05:05 PM",
       "workingHours": 8.2,
       "status": "PRESENT",
-      "site": "Head Office (KIMPL Patna)",
+      "site": "Head Office (Kartik India Manpower Patna)",
       "source": "Biometric eSSL-Pro (DIET Gate 1)"
     },
     {
@@ -1541,7 +1541,7 @@
       "outTime": "05:05 PM",
       "workingHours": 8.2,
       "status": "PRESENT",
-      "site": "Head Office (KIMPL Patna)",
+      "site": "Head Office (Kartik India Manpower Patna)",
       "source": "Biometric eSSL-Pro (DIET Gate 1)"
     },
     {
@@ -1553,7 +1553,7 @@
       "outTime": "05:05 PM",
       "workingHours": 8.2,
       "status": "PRESENT",
-      "site": "Head Office (KIMPL Patna)",
+      "site": "Head Office (Kartik India Manpower Patna)",
       "source": "Biometric eSSL-Pro (DIET Gate 1)"
     },
     {
@@ -1565,7 +1565,7 @@
       "outTime": "05:05 PM",
       "workingHours": 8.2,
       "status": "PRESENT",
-      "site": "Head Office (KIMPL Patna)",
+      "site": "Head Office (Kartik India Manpower Patna)",
       "source": "Biometric eSSL-Pro (DIET Gate 1)"
     },
     {
@@ -1577,7 +1577,7 @@
       "outTime": "05:05 PM",
       "workingHours": 8.2,
       "status": "PRESENT",
-      "site": "Head Office (KIMPL Patna)",
+      "site": "Head Office (Kartik India Manpower Patna)",
       "source": "Biometric eSSL-Pro (DIET Gate 1)"
     },
     {
@@ -1589,7 +1589,7 @@
       "outTime": "05:05 PM",
       "workingHours": 8.2,
       "status": "PRESENT",
-      "site": "Head Office (KIMPL Patna)",
+      "site": "Head Office (Kartik India Manpower Patna)",
       "source": "Biometric eSSL-Pro (DIET Gate 1)"
     },
     {
@@ -1601,7 +1601,7 @@
       "outTime": "--",
       "workingHours": 0,
       "status": "OFF_DAY",
-      "site": "Head Office (KIMPL Patna)",
+      "site": "Head Office (Kartik India Manpower Patna)",
       "source": "Biometric eSSL-Pro (DIET Gate 1)"
     },
     {
@@ -1613,7 +1613,7 @@
       "outTime": "05:05 PM",
       "workingHours": 8.2,
       "status": "PRESENT",
-      "site": "Head Office (KIMPL Patna)",
+      "site": "Head Office (Kartik India Manpower Patna)",
       "source": "Biometric eSSL-Pro (DIET Gate 1)"
     }
   ],
@@ -1687,7 +1687,7 @@
       "empId": "e6",
       "empName": "Arpita Sinha",
       "post": "Accountant",
-      "site": "Head Office (KIMPL Patna)",
+      "site": "Head Office (Kartik India Manpower Patna)",
       "month": "October 2026",
       "totalMonthDays": 31,
       "presentDays": 26,
@@ -1700,7 +1700,7 @@
       "empId": "e7",
       "empName": "Taniya Gupta",
       "post": "DEO",
-      "site": "Head Office (KIMPL Patna)",
+      "site": "Head Office (Kartik India Manpower Patna)",
       "month": "October 2026",
       "totalMonthDays": 31,
       "presentDays": 26,
@@ -1821,7 +1821,7 @@
       "empId": "e6",
       "empName": "Arpita Sinha",
       "post": "Accountant",
-      "site": "Head Office (KIMPL Patna)",
+      "site": "Head Office (Kartik India Manpower Patna)",
       "month": "October 2026",
       "baseSalary": 18000,
       "presentDays": 26,
@@ -1842,7 +1842,7 @@
       "empId": "e7",
       "empName": "Taniya Gupta",
       "post": "DEO",
-      "site": "Head Office (KIMPL Patna)",
+      "site": "Head Office (Kartik India Manpower Patna)",
       "month": "October 2026",
       "baseSalary": 12000,
       "presentDays": 26,
@@ -2283,7 +2283,7 @@
       "category": "PSARA Statutory",
       "responsibleDept": "Compliance",
       "responsiblePerson": "Manoj Tiwary",
-      "referenceNo": "PSARA/BIHAR/HQ/2023/KIMPL-09",
+      "referenceNo": "PSARA/BIHAR/HQ/2023/SVPL-09",
       "issueDate": "2023-11-20",
       "expiryDate": "2028-11-19",
       "dueDate": "2028-10-19",

@@ -36,7 +36,12 @@ const authMiddleware = (req, res, next) => {
 app.post('/api/auth/login', (req, res) => {
   const { email, password, loginType } = req.body;
   const currentDb = db();
-  const user = currentDb.users.find(u => u.email.toLowerCase() === (email || '').trim().toLowerCase());
+  const targetEmail = (email || '').trim().toLowerCase();
+  const user = currentDb.users.find(u => {
+    const uEmail = (u.email || '').toLowerCase();
+    const norm = (em) => (em || '').replace('@kartikindiamanpower.com', '@swapnvihar.com').replace('@kimpl.com', '@swapnvihar.com');
+    return uEmail === targetEmail || norm(uEmail) === norm(targetEmail);
+  });
 
   if (!user || user.password !== password) {
     return res.status(401).json({ error: 'Invalid email or password' });
@@ -270,7 +275,7 @@ app.post('/api/projects', (req, res) => {
       id: 'p' + (d.projects.length + 1),
       name: req.body.name,
       department: req.body.department || 'Education Department',
-      tenderNo: req.body.tenderNo || `NIT/KIMPL/${new Date().getFullYear()}/${Math.floor(100 + Math.random() * 900)}`,
+      tenderNo: req.body.tenderNo || `NIT/SVPL/${new Date().getFullYear()}/${Math.floor(100 + Math.random() * 900)}`,
       deptHead: req.body.deptHead || 'Department Head',
       tenderSaleDate: req.body.tenderSaleDate || new Date().toISOString().split('T')[0],
       workOrderDate: req.body.workOrderDate || new Date().toISOString().split('T')[0],
@@ -462,7 +467,7 @@ app.post('/api/employees', (req, res) => {
     const id = 'e' + (d.employees.length + 1);
     created = {
       id,
-      code: `KIMPL-0${d.employees.length + 1}`,
+      code: `SVPL-0${d.employees.length + 1}`,
       name: req.body.name,
       department: req.body.department || 'Security Operations',
       type: req.body.type || 'Site Staff',
@@ -771,9 +776,9 @@ app.get('/api/payroll', (req, res) => res.json(db().payroll || []));
 
 // Health check
 app.get('/api/health', (req, res) => {
-  res.json({ status: 'OK', service: 'KIMPL ERP Backend API', timestamp: new Date() });
+  res.json({ status: 'OK', service: 'KARTIK INDIA MANPOWER ERP Backend API', timestamp: new Date() });
 });
 
 app.listen(PORT, () => {
-  console.log(`[KIMPL ERP Server] Running on http://localhost:${PORT}`);
+  console.log(`[KARTIK INDIA MANPOWER ERP Server] Running on http://localhost:${PORT}`);
 });

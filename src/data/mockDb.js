@@ -1,4 +1,4 @@
-// Professional ERP Mock Database for KIMPL ERP System
+// Professional ERP Mock Database for KARTIK INDIA MANPOWER PRIVATE LIMITED ERP System
 // Contains all organizational entities, hierarchy, projects, tenders, compliances, HR, accounts, and tickets
 
 const mockData = {
@@ -6,7 +6,7 @@ const mockData = {
     {
       id: "u1",
       name: "Alok Kumar",
-      email: "md@kimpl.com",
+      email: "md@kartikindiamanpower.com",
       password: "123",
       role: "OWNER",
       department: "Management",
@@ -19,7 +19,7 @@ const mockData = {
     {
       id: "u2",
       name: "Rahul Kumar",
-      email: "gm@kimpl.com",
+      email: "gm@kartikindiamanpower.com",
       password: "123",
       role: "MANAGER",
       department: "Operations",
@@ -32,7 +32,7 @@ const mockData = {
     {
       id: "u3",
       name: "Pooja Sharma",
-      email: "hr@kimpl.com",
+      email: "hr@kartikindiamanpower.com",
       password: "123",
       role: "DEPT_MANAGER",
       department: "HR",
@@ -45,7 +45,7 @@ const mockData = {
     {
       id: "u4",
       name: "Arpita Sinha",
-      email: "accounts@kimpl.com",
+      email: "accounts@kartikindiamanpower.com",
       password: "123",
       role: "DEPT_MANAGER",
       department: "Accounts",
@@ -58,7 +58,7 @@ const mockData = {
     {
       id: "u5",
       name: "Vikas Verma",
-      email: "tender@kimpl.com",
+      email: "tender@kartikindiamanpower.com",
       password: "123",
       role: "DEPT_MANAGER",
       department: "Tender",
@@ -71,7 +71,7 @@ const mockData = {
     {
       id: "u6",
       name: "Manoj Tiwary",
-      email: "compliance@kimpl.com",
+      email: "compliance@kartikindiamanpower.com",
       password: "123",
       role: "DEPT_MANAGER",
       department: "Compliance",
@@ -84,7 +84,7 @@ const mockData = {
     {
       id: "u7",
       name: "Sanjay Mishra",
-      email: "deo@kimpl.com",
+      email: "deo@kartikindiamanpower.com",
       password: "123",
       role: "EMPLOYEE",
       department: "Operations",
@@ -97,7 +97,7 @@ const mockData = {
     {
       id: "u8",
       name: "Ramesh Singh",
-      email: "supervisor@kimpl.com",
+      email: "supervisor@kartikindiamanpower.com",
       password: "123",
       role: "EMPLOYEE",
       department: "HR",
@@ -110,7 +110,7 @@ const mockData = {
     {
       id: "u9",
       name: "Ankit Roy",
-      email: "ankit.roy@kimpl.com",
+      email: "ankit.roy@kartikindiamanpower.com",
       password: "123",
       role: "EMPLOYEE",
       department: "Accounts",
@@ -496,7 +496,7 @@ const mockData = {
       category: "PSARA Statutory",
       responsibleDept: "Compliance",
       responsiblePerson: "Manoj Tiwary",
-      referenceNo: "PSARA/BIHAR/HQ/2023/KIMPL-09",
+      referenceNo: "PSARA/BIHAR/HQ/2024/091",
       issueDate: "2023-11-20",
       expiryDate: "2028-11-19",
       dueDate: "2028-10-19",
@@ -648,7 +648,7 @@ const mockData = {
   employees: [
     {
       id: "e1",
-      code: "KIMPL-01",
+      code: "SVPL-01",
       name: "Alok Ram",
       department: "Security Operations",
       type: "Site Staff",
@@ -669,7 +669,7 @@ const mockData = {
     },
     {
       id: "e2",
-      code: "KIMPL-02",
+      code: "SVPL-02",
       name: "Veena Devi",
       department: "Security Operations",
       type: "Site Staff",
@@ -690,7 +690,7 @@ const mockData = {
     },
     {
       id: "e3",
-      code: "KIMPL-03",
+      code: "SVPL-03",
       name: "Chunnu Kumar",
       department: "Security Operations",
       type: "Site Staff",
@@ -711,7 +711,7 @@ const mockData = {
     },
     {
       id: "e4",
-      code: "KIMPL-04",
+      code: "SVPL-04",
       name: "Dharmveer Kumar",
       department: "Sanitation & Field",
       type: "Site Staff",
@@ -732,7 +732,7 @@ const mockData = {
     },
     {
       id: "e5",
-      code: "KIMPL-05",
+      code: "SVPL-05",
       name: "Manish Kumar",
       department: "Sanitation & Field",
       type: "Site Staff",
@@ -753,7 +753,7 @@ const mockData = {
     },
     {
       id: "e6",
-      code: "KIMPL-06",
+      code: "SVPL-06",
       name: "Rameshwar Paswan",
       department: "Security Operations",
       type: "Site Staff",
@@ -777,7 +777,7 @@ const mockData = {
   invoices: [
     {
       id: "inv1",
-      no: "KIMPL/2026-27/001",
+      no: "SVPL/2026-27/001",
       client: "DIET Sheohar College",
       department: "Education Department",
       month: "August",
@@ -794,7 +794,7 @@ const mockData = {
     },
     {
       id: "inv2",
-      no: "KIMPL/2026-27/002",
+      no: "SVPL/2026-27/002",
       client: "DIET Sheohar College",
       department: "Education Department",
       month: "September",
@@ -811,7 +811,7 @@ const mockData = {
     },
     {
       id: "inv3",
-      no: "KIMPL/2026-27/003",
+      no: "SVPL/2026-27/003",
       client: "DIET Quila Ghat Darbhanga",
       department: "Education Department",
       month: "September",
@@ -828,7 +828,7 @@ const mockData = {
     },
     {
       id: "inv4",
-      no: "KIMPL/2026-27/004",
+      no: "SVPL/2026-27/004",
       client: "Block Development Office, Bakhtiyarpur",
       department: "Urban Development & Municipal",
       month: "September",
@@ -849,7 +849,7 @@ const mockData = {
     {
       id: "l1",
       client: "DIET Sheohar College",
-      billNo: "KIMPL/2026-27/001",
+      billNo: "SVPL/2026-27/001",
       period: "August 2026",
       billed: 75504.48,
       rec: 75504.48,
@@ -859,7 +859,7 @@ const mockData = {
     {
       id: "l2",
       client: "DIET Sheohar College",
-      billNo: "KIMPL/2026-27/002",
+      billNo: "SVPL/2026-27/002",
       period: "September 2026",
       billed: 75504.48,
       rec: 0.00,
@@ -869,7 +869,7 @@ const mockData = {
     {
       id: "l3",
       client: "DIET Quila Ghat Darbhanga",
-      billNo: "KIMPL/2026-27/003",
+      billNo: "SVPL/2026-27/003",
       period: "September 2026",
       billed: 219428.00,
       rec: 0.00,
@@ -879,7 +879,7 @@ const mockData = {
     {
       id: "l4",
       client: "Bakhtiyarpur Block Sanitation",
-      billNo: "KIMPL/2026-27/004",
+      billNo: "SVPL/2026-27/004",
       period: "September 2026",
       billed: 142200.00,
       rec: 80000.00,
