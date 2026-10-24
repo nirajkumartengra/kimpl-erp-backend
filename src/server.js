@@ -231,7 +231,14 @@ app.get('/api/projects', (req, res) => {
   const { status, department, search, page = 1, limit = 50 } = req.query;
 
   if (status && status !== 'All') {
-    projects = projects.filter(p => p.status.toLowerCase() === status.toLowerCase());
+    const sLow = status.toLowerCase();
+    projects = projects.filter(p => {
+      const pStatus = (p.status || '').toLowerCase();
+      if (sLow === 'running') return pStatus === 'running' || pStatus === 'current';
+      if (sLow === 'uploaded') return pStatus === 'uploaded' || pStatus === 'pending';
+      if (sLow === 'selected') return pStatus === 'selected' || pStatus === 'closed' || pStatus === 'awarded';
+      return pStatus === sLow;
+    });
   }
 
   if (department && department !== 'All') {
@@ -259,11 +266,16 @@ app.get('/api/projects', (req, res) => {
     totalPages: Math.ceil(total / limit),
     countsByStatus: {
       All: (currentDb.projects || []).length,
-      Current: (currentDb.projects || []).filter(p => p.status === 'Current').length,
+      Running: (currentDb.projects || []).filter(p => p.status === 'Running' || p.status === 'Current').length,
       Upcoming: (currentDb.projects || []).filter(p => p.status === 'Upcoming').length,
-      Pending: (currentDb.projects || []).filter(p => p.status === 'Pending').length,
-      Closed: (currentDb.projects || []).filter(p => p.status === 'Closed').length,
-      Cancelled: (currentDb.projects || []).filter(p => p.status === 'Cancelled').length
+      Uploaded: (currentDb.projects || []).filter(p => p.status === 'Uploaded' || p.status === 'Pending').length,
+      Selected: (currentDb.projects || []).filter(p => p.status === 'Selected' || p.status === 'Closed' || p.status === 'Awarded').length,
+      Rejected: (currentDb.projects || []).filter(p => p.status === 'Rejected').length,
+      Cancelled: (currentDb.projects || []).filter(p => p.status === 'Cancelled').length,
+      // Legacy compatibility
+      Current: (currentDb.projects || []).filter(p => p.status === 'Current' || p.status === 'Running').length,
+      Pending: (currentDb.projects || []).filter(p => p.status === 'Pending' || p.status === 'Uploaded').length,
+      Closed: (currentDb.projects || []).filter(p => p.status === 'Closed' || p.status === 'Selected').length
     }
   });
 });
@@ -276,24 +288,33 @@ app.post('/api/projects', (req, res) => {
       name: req.body.name,
       department: req.body.department || 'Education Department',
       tenderNo: req.body.tenderNo || `NIT/SVPL/${new Date().getFullYear()}/${Math.floor(100 + Math.random() * 900)}`,
-      deptHead: req.body.deptHead || 'Department Head',
-      tenderSaleDate: req.body.tenderSaleDate || new Date().toISOString().split('T')[0],
+      deptHead: req.body.deptHead || 'Department Head / Tender Authority',
+      portal: req.body.portal || 'Eproc 2',
+      tenderOpeningDate: req.body.tenderOpeningDate || req.body.tenderSaleDate || new Date().toISOString().split('T')[0],
+      tenderClosingDate: req.body.tenderClosingDate || '',
+      tenderSaleDate: req.body.tenderSaleDate || req.body.tenderOpeningDate || new Date().toISOString().split('T')[0],
       workOrderDate: req.body.workOrderDate || new Date().toISOString().split('T')[0],
       tenure: req.body.tenure || '24 Months',
       tenderFee: Number(req.body.tenderFee) || 5000,
       emdAmount: Number(req.body.emdAmount) || 150000,
       location: req.body.location || 'Patna, Bihar',
       requirements: req.body.requirements || [],
-      totalManpower: req.body.totalManpower || 0,
-      monthlySalaryTotal: req.body.monthlySalaryTotal || 0,
-      requiredEmployees: req.body.requiredEmployees || [{ post: 'Security Guard Unarmed', count: 6 }],
-      salaryDetails: req.body.salaryDetails || [{ post: 'Security Guard Unarmed', govtRate: 12584, workerPay: 6500, pf: 1362, esi: 340 }],
+      totalManpower: Number(req.body.totalManpower) || 0,
+      monthlySalaryTotal: Number(req.body.monthlySalaryTotal) || 0,
+      monthlyPfTotal: Number(req.body.monthlyPfTotal) || 0,
+      monthlyEsiTotal: Number(req.body.monthlyEsiTotal) || 0,
+      monthlyBillingTotal: Number(req.body.monthlyBillingTotal) || 0,
+      monthlyGstTotal: Number(req.body.monthlyGstTotal) || 0,
+      monthlyGrandTotal: Number(req.body.monthlyGrandTotal) || 0,
+      yearlyContractValue: Number(req.body.yearlyContractValue) || Number(req.body.budget) || 1200000,
+      requiredEmployees: req.body.requiredEmployees || (req.body.requirements ? req.body.requirements.map(r => ({ post: r.post, count: r.count })) : [{ post: 'Security Guard Unarmed', count: 6 }]),
+      salaryDetails: req.body.salaryDetails || (req.body.requirements ? req.body.requirements.map(r => ({ post: r.post, govtRate: r.salary, workerPay: r.salary, pf: r.pf, esi: r.esi })) : []),
       startDate: req.body.startDate || new Date().toISOString().split('T')[0],
       endDate: req.body.endDate || '2028-03-31',
-      status: req.body.status || 'Current',
-      budget: Number(req.body.budget) || 1200000,
+      status: req.body.status || 'Running',
+      budget: Number(req.body.budget) || Number(req.body.yearlyContractValue) || 1200000,
       spent: Number(req.body.spent) || 0,
-      documents: req.body.documents || [{ name: 'Work_Order_Signed.pdf', size: '1.5 MB', type: 'pdf' }],
+      documents: req.body.documents || [],
       remarks: req.body.remarks || 'Standard deployment terms apply.'
     };
     d.projects.unshift(created);
