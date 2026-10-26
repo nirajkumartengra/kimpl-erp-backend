@@ -566,8 +566,70 @@ app.get('/api/accounts/summary', (req, res) => {
     expenseRecords: expenseRecords.slice(-10),
     projectExpenditures: acc.projectExpenditures || [],
     invoices: currentDb.invoices || [],
-    ledger: currentDb.ledger || []
+    ledger: currentDb.ledger || [],
+    assetPurchases: acc.assetPurchases || []
   });
+});
+
+// Company Assets & Purchases (Under Accounts)
+app.get('/api/accounts/assets', (req, res) => {
+  const currentDb = db();
+  const acc = currentDb.accounts || {};
+  res.json(acc.assetPurchases || []);
+});
+
+app.post('/api/accounts/assets', (req, res) => {
+  let created;
+  dbStore.updateDb(d => {
+    if (!d.accounts) d.accounts = { incomeRecords: [], expenseRecords: [], projectExpenditures: [], assetPurchases: [] };
+    if (!d.accounts.assetPurchases) d.accounts.assetPurchases = [];
+
+    const qty = Number(req.body.qty) || 1;
+    const unitPrice = Number(req.body.unitPrice) || 0;
+    const totalAmount = Number(req.body.totalAmount) || (qty * unitPrice);
+
+    created = {
+      id: 'ast-' + Date.now(),
+      name: req.body.name,
+      category: req.body.category || 'Furniture',
+      qty,
+      unitPrice,
+      totalAmount,
+      vendor: req.body.vendor || 'Direct Vendor',
+      billNo: req.body.billNo || `BILL-${Date.now().toString().slice(-4)}`,
+      date: req.body.date || new Date().toISOString().split('T')[0],
+      location: req.body.location || 'Head Office',
+      paymentMode: req.body.paymentMode || 'Bank NEFT',
+      status: req.body.status || 'In Use',
+      remarks: req.body.remarks || '',
+      createdAt: new Date().toISOString()
+    };
+    d.accounts.assetPurchases.unshift(created);
+
+    // Optionally sync with operational expenses
+    if (req.body.syncWithExpense) {
+      if (!d.accounts.expenseRecords) d.accounts.expenseRecords = [];
+      d.accounts.expenseRecords.unshift({
+        id: 'exp' + (d.accounts.expenseRecords.length + 1),
+        date: created.date,
+        category: `Asset - ${created.category}`,
+        amount: totalAmount,
+        paidTo: created.vendor,
+        projectId: 'HO',
+        status: 'Approved'
+      });
+    }
+  });
+  res.status(201).json(created);
+});
+
+app.delete('/api/accounts/assets/:id', (req, res) => {
+  dbStore.updateDb(d => {
+    if (d.accounts && d.accounts.assetPurchases) {
+      d.accounts.assetPurchases = d.accounts.assetPurchases.filter(a => String(a.id) !== String(req.params.id));
+    }
+  });
+  res.json({ success: true });
 });
 
 app.post('/api/accounts/income', (req, res) => {

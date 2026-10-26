@@ -2497,6 +2497,98 @@
         "netMargin": 95428,
         "marginPct": 43.5
       }
+    ],
+    "assetPurchases": [
+      {
+        "id": "ast1",
+        "name": "Ergonomic High-Back Revolving Executive Chairs",
+        "category": "Furniture",
+        "qty": 12,
+        "unitPrice": 4200,
+        "totalAmount": 50400,
+        "vendor": "Godrej Interio / Royal Furniture, Patna",
+        "billNo": "RF-2026-1044",
+        "date": "2026-06-12",
+        "location": "Head Office (Staff & Accounts Room)",
+        "paymentMode": "Bank NEFT",
+        "status": "In Use",
+        "remarks": "Mesh back, pneumatic height adjust, 1-yr warranty"
+      },
+      {
+        "id": "ast2",
+        "name": "Conference Room Oval Meeting Table (10 Seater)",
+        "category": "Furniture",
+        "qty": 1,
+        "unitPrice": 28500,
+        "totalAmount": 28500,
+        "vendor": "WoodCraft Commercials",
+        "billNo": "WC-8891",
+        "date": "2026-06-15",
+        "location": "Head Office (Meeting Hall)",
+        "paymentMode": "Company Cheque",
+        "status": "In Use",
+        "remarks": "Teak wood finish with cable manager ports"
+      },
+      {
+        "id": "ast3",
+        "name": "HP ProBook 450 G10 Core i5 Laptops (Admin & Billing)",
+        "category": "IT & Electronics",
+        "qty": 2,
+        "unitPrice": 58000,
+        "totalAmount": 116000,
+        "vendor": "Apex Infotech Solutions",
+        "billNo": "INV-APX-7712",
+        "date": "2026-05-20",
+        "location": "Head Office (Billing Desk & Tender Ops)",
+        "paymentMode": "Bank NEFT",
+        "status": "In Use",
+        "remarks": "16GB RAM, 512GB SSD, 3-Yr Onsite Care Pack"
+      },
+      {
+        "id": "ast4",
+        "name": "eSSL SilkBio-101TC Face & Fingerprint Attendance Devices",
+        "category": "Biometrics & Security",
+        "qty": 3,
+        "unitPrice": 13500,
+        "totalAmount": 40500,
+        "vendor": "Security Plus Bihar Dist.",
+        "billNo": "SP-99014",
+        "date": "2026-06-01",
+        "location": "Sheohar Site & HQ Main Gate",
+        "paymentMode": "UPI / QR",
+        "status": "In Use",
+        "remarks": "WiFi + 4G SIM cloud push enabled"
+      },
+      {
+        "id": "ast5",
+        "name": "Security Guard Uniform Sets (Shirt, Trousers, Cap & Badges)",
+        "category": "Uniforms & Field Gear",
+        "qty": 50,
+        "unitPrice": 1250,
+        "totalAmount": 62500,
+        "vendor": "Kaveri Garments & Uniforms",
+        "billNo": "KV-5521",
+        "date": "2026-06-18",
+        "location": "Central Store Room (Issued to Deployment Sites)",
+        "paymentMode": "Bank NEFT",
+        "status": "In Stock",
+        "remarks": "Heavy-duty navy blue with embroidered KIMPL logos"
+      },
+      {
+        "id": "ast6",
+        "name": "Voltas 1.5 Ton Inverter Split AC",
+        "category": "Office Equipment",
+        "qty": 2,
+        "unitPrice": 36000,
+        "totalAmount": 72000,
+        "vendor": "Patna Electronics World",
+        "billNo": "PEW-4109",
+        "date": "2026-05-10",
+        "location": "Head Office (Server Room & MD Office)",
+        "paymentMode": "Bank NEFT",
+        "status": "In Use",
+        "remarks": "Copper condenser, 5-star rating"
+      }
     ]
   },
   "tickets": [

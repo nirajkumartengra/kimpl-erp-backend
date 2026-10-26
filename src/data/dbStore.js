@@ -14,6 +14,8 @@ function ensureErpCollections(data) {
   }
   if (!data.accounts) {
     data.accounts = JSON.parse(JSON.stringify(mockDb.accounts));
+  } else if (!data.accounts.assetPurchases || data.accounts.assetPurchases.length === 0) {
+    data.accounts.assetPurchases = JSON.parse(JSON.stringify(mockDb.accounts.assetPurchases || []));
   }
   if (!data.tickets || data.tickets.length === 0) {
     data.tickets = JSON.parse(JSON.stringify(mockDb.tickets));
