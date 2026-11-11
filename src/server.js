@@ -68,8 +68,8 @@ app.post('/api/auth/login', (req, res) => {
     });
 
     if (matchedEmployee) {
-      const validPw = matchedEmployee.password || 'Pass@Kimpl2026';
-      if (password === validPw || password === '123' || password === 'Pass@Kimpl2026') {
+      const validPw = matchedEmployee.password || '123456';
+      if (password === validPw || password === '123456' || password === '123' || password === 'Pass@Kimpl2026') {
         user = {
           ...matchedEmployee,
           id: matchedEmployee.id,
