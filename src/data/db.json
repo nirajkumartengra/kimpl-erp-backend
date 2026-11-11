@@ -17,23 +17,6 @@
     },
     {
       "id": "u2",
-      "name": "Rahul Kumar",
-      "email": "gm@kartikindiamanpower.com",
-      "password": "123",
-      "role": "MANAGER",
-      "department": "Operations",
-      "title": "General Manager",
-      "status": "ACTIVE",
-      "loginType": "department",
-      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150",
-      "permissions": [
-        "OPERATIONS_ALL",
-        "PROJECTS_ALL",
-        "COMPLIANCE_VIEW"
-      ]
-    },
-    {
-      "id": "u3",
       "name": "Pooja Sharma",
       "email": "hr@kartikindiamanpower.com",
       "password": "123",
@@ -51,24 +34,7 @@
       ]
     },
     {
-      "id": "u4",
-      "name": "Arpita Sinha",
-      "email": "accounts@kartikindiamanpower.com",
-      "password": "123",
-      "role": "DEPT_MANAGER",
-      "department": "Accounts",
-      "title": "Chief Accounts Officer",
-      "status": "ACTIVE",
-      "loginType": "department",
-      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150",
-      "permissions": [
-        "ACCOUNTS_ALL",
-        "PROJECTS_VIEW",
-        "REPORTS_FINANCIAL"
-      ]
-    },
-    {
-      "id": "u5",
+      "id": "u3",
       "name": "Vikas Verma",
       "email": "tender@kartikindiamanpower.com",
       "password": "123",
@@ -84,67 +50,20 @@
       ]
     },
     {
-      "id": "u6",
-      "name": "Manoj Tiwary",
-      "email": "compliance@kartikindiamanpower.com",
+      "id": "u4",
+      "name": "Arpita Sinha",
+      "email": "accounts@kartikindiamanpower.com",
       "password": "123",
       "role": "DEPT_MANAGER",
-      "department": "Compliance",
-      "title": "Legal & PSARA Compliance Head",
+      "department": "Accounts",
+      "title": "Chief Accounts Officer",
       "status": "ACTIVE",
       "loginType": "department",
-      "avatar": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150",
       "permissions": [
-        "COMPLIANCE_ALL",
-        "PROJECTS_VIEW"
-      ]
-    },
-    {
-      "id": "u7",
-      "name": "Sanjay Mishra",
-      "email": "deo@kartikindiamanpower.com",
-      "password": "123",
-      "role": "EMPLOYEE",
-      "department": "Operations",
-      "title": "Senior DEO Operator",
-      "status": "ACTIVE",
-      "loginType": "employee",
-      "avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150",
-      "permissions": [
+        "ACCOUNTS_ALL",
         "PROJECTS_VIEW",
-        "SUPPORT_CREATE"
-      ]
-    },
-    {
-      "id": "u8",
-      "name": "Ramesh Singh",
-      "email": "supervisor@kartikindiamanpower.com",
-      "password": "123",
-      "role": "EMPLOYEE",
-      "department": "HR",
-      "title": "Site Guard Supervisor",
-      "status": "ACTIVE",
-      "loginType": "employee",
-      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150",
-      "permissions": [
-        "HR_VIEW",
-        "SUPPORT_CREATE"
-      ]
-    },
-    {
-      "id": "u9",
-      "name": "Ankit Roy",
-      "email": "ankit.roy@kartikindiamanpower.com",
-      "password": "123",
-      "role": "EMPLOYEE",
-      "department": "Accounts",
-      "title": "Junior Billing Assistant",
-      "status": "ACTIVE",
-      "loginType": "employee",
-      "avatar": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=150",
-      "permissions": [
-        "ACCOUNTS_VIEW",
-        "SUPPORT_CREATE"
+        "REPORTS_FINANCIAL"
       ]
     }
   ],
@@ -211,128 +130,13 @@
       "marginPerPerson": 5000
     }
   ],
-  "employees": [
-    {
-      "id": "e1",
-      "name": "Niraj Singh",
-      "empId": "EMP000001",
-      "code": "EMP000001",
-      "email": "ramesh.guard@kartikindiamanpower.com",
-      "department": "Security & Field Operations",
-      "designation": "Armed Security Guard (Gunman)",
-      "employmentStatus": "Active",
-      "loginStatus": "Active",
-      "status": "Active",
-      "joiningDate": "2026-05-01",
-      "joined": "2026-05-01",
-      "avatar": "https://api.dicebear.com/7.x/initials/svg?seed=Niraj%20Singh"
-    },
-    {
-      "id": "e2",
-      "name": "Ramesh Kumar Singh",
-      "empId": "EMP000002",
-      "code": "EMP000002",
-      "email": "ramesh.guard@kartikindiamanpower.com",
-      "department": "Agriculture Department (कृषि विभाग)",
-      "designation": "Armed Security Guard (Gunman)",
-      "employmentStatus": "Active",
-      "loginStatus": "Active",
-      "status": "Active",
-      "joiningDate": "2026-05-01",
-      "joined": "2026-05-01",
-      "avatar": "https://api.dicebear.com/7.x/initials/svg?seed=Ramesh%20Kumar%20Singh"
-    },
-    {
-      "id": "e3",
-      "name": "Niraj Singh",
-      "empId": "EMP000003",
-      "code": "EMP000003",
-      "email": "nk667296@gmail.com",
-      "department": "Agriculture Department (कृषि विभाग)",
-      "designation": "Armed Security Guard (Gunman)",
-      "employmentStatus": "Active",
-      "loginStatus": "Active",
-      "status": "Active",
-      "joiningDate": "2026-05-01",
-      "joined": "2026-05-01",
-      "avatar": "https://api.dicebear.com/7.x/initials/svg?seed=Niraj%20Singh%202"
-    }
-  ],
+  "employees": [],
   "invoices": [],
   "ledger": [],
   "attendance": [],
   "monthlyAttendance": [],
   "payroll": [],
-  "projects": [
-    {
-      "id": "p1",
-      "name": "Testing_Niraj",
-      "tenderNo": "NIT/DIET-SH/2026/091",
-      "department": "Agriculture Department (कृषि विभाग)",
-      "client": "Ck Check • Agriculture Department (कृषि विभाग)",
-      "portal": "GEM (Government e-Marketplace)",
-      "startDate": "2026-05-01",
-      "endDate": "2027-04-30",
-      "budget": 1450000,
-      "spent": 75500,
-      "staff": 16,
-      "status": "Running",
-      "type": "Govt. Sector",
-      "location": "Sheohar, Bihar",
-      "remarks": "Active GEM tender deployment"
-    },
-    {
-      "id": "p2",
-      "name": "DIET Sheohar Campus Security & Facility Management Services",
-      "tenderNo": "NIT/DIET-SH/2026/089",
-      "department": "Higher Education & Universities",
-      "client": "d • Higher Education & Universities",
-      "portal": "Eproc 2 (eProcurement Bihar / State)",
-      "startDate": "2026-05-01",
-      "endDate": "2027-04-30",
-      "budget": 1450000,
-      "spent": 75500,
-      "staff": 15,
-      "status": "Running",
-      "type": "Govt. Sector",
-      "location": "Sheohar, Bihar",
-      "remarks": "Active eProc 2 deployment"
-    },
-    {
-      "id": "p3",
-      "name": "DIET Sheohar Campus Security & Facility Management Services",
-      "tenderNo": "NIT/DIET-SH/2026/090",
-      "department": "Police Dept & Administration",
-      "client": "Department Head / Tender Authority • Police Dept & Administration",
-      "portal": "Offline Tender (Physical Sealed Bid)",
-      "startDate": "2026-05-01",
-      "endDate": "2027-04-30",
-      "budget": 1450000,
-      "spent": 75500,
-      "staff": 15,
-      "status": "Running",
-      "type": "Govt. Sector",
-      "location": "Sheohar, Bihar",
-      "remarks": "Active Offline Sealed Bid deployment"
-    },
-    {
-      "id": "p4",
-      "name": "Arun Project",
-      "tenderNo": "NIT/DIET-SH/2026/088",
-      "department": "Education Department",
-      "client": "h • Education Department",
-      "portal": "Eproc 2 (eProcurement Bihar / State)",
-      "startDate": "2026-05-01",
-      "endDate": "2027-04-30",
-      "budget": 1450000,
-      "spent": 75500,
-      "staff": 15,
-      "status": "Running",
-      "type": "Govt. Sector",
-      "location": "Sheohar, Bihar",
-      "remarks": "Active education department security deployment"
-    }
-  ],
+  "projects": [],
   "compliances": [],
   "accounts": {
     "incomeRecords": [],

@@ -25,14 +25,9 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `role`, `department`, `title`, `status`, `loginType`) VALUES
 ('u1', 'Alok Kumar', 'md@kartikindiamanpower.com', '123', 'OWNER', 'Management', 'Managing Director & Owner', 'ACTIVE', 'owner'),
-('u2', 'Rahul Kumar', 'gm@kartikindiamanpower.com', '123', 'MANAGER', 'Operations', 'General Manager', 'ACTIVE', 'department'),
-('u3', 'Pooja Sharma', 'hr@kartikindiamanpower.com', '123', 'DEPT_MANAGER', 'HR', 'HR & Recruitment Manager', 'ACTIVE', 'department'),
-('u4', 'Arpita Sinha', 'accounts@kartikindiamanpower.com', '123', 'DEPT_MANAGER', 'Accounts', 'Chief Accounts Officer', 'ACTIVE', 'department'),
-('u5', 'Vikas Verma', 'tender@kartikindiamanpower.com', '123', 'DEPT_MANAGER', 'Tender', 'Tender & Bidding Lead', 'ACTIVE', 'department'),
-('u6', 'Manoj Tiwary', 'compliance@kartikindiamanpower.com', '123', 'DEPT_MANAGER', 'Compliance', 'Legal & PSARA Compliance Head', 'ACTIVE', 'department'),
-('u7', 'Sanjay Mishra', 'deo@kartikindiamanpower.com', '123', 'EMPLOYEE', 'Operations', 'Senior DEO Operator', 'ACTIVE', 'employee'),
-('u8', 'Ramesh Singh', 'supervisor@kartikindiamanpower.com', '123', 'EMPLOYEE', 'HR', 'Site Guard Supervisor', 'ACTIVE', 'employee'),
-('u9', 'Ankit Roy', 'ankit.roy@kartikindiamanpower.com', '123', 'EMPLOYEE', 'Accounts', 'Junior Billing Assistant', 'ACTIVE', 'employee');
+('u2', 'Pooja Sharma', 'hr@kartikindiamanpower.com', '123', 'DEPT_MANAGER', 'HR', 'HR & Recruitment Manager', 'ACTIVE', 'department'),
+('u3', 'Vikas Verma', 'tender@kartikindiamanpower.com', '123', 'DEPT_MANAGER', 'Tender', 'Tender & Bidding Lead', 'ACTIVE', 'department'),
+('u4', 'Arpita Sinha', 'accounts@kartikindiamanpower.com', '123', 'DEPT_MANAGER', 'Accounts', 'Chief Accounts Officer', 'ACTIVE', 'department');
 
 DROP TABLE IF EXISTS `projects`;
 CREATE TABLE `projects` (
